@@ -469,4 +469,87 @@ video{
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+/* تحسينات لـ Toastify */
+.toastify {
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+/* سلايدر CSS فقط */
+.css-slider {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.css-slider-container {
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.css-slides {
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+.css-slides img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(0); }
+    30% { transform: translateX(-100%); }
+    55% { transform: translateX(-100%); }
+    60% { transform: translateX(-200%); }
+    85% { transform: translateX(-200%); }
+    90% { transform: translateX(-300%); }
+    100% { transform: translateX(-300%); }
+}
+
+/* تأثيرات WOW */
+.wow {
+    visibility: hidden;
+}
+
+/* تحسينات AJAX Modal */
+.modal-content {
+    animation: modalFadeIn 0.3s;
+}
+
+@keyframes modalFadeIn {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* تأثيرات jQuery محسنة */
+.gallery-item {
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* تحسينات للنماذج */
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #c8b560 !important;
+    box-shadow: 0 0 8px rgba(200, 181, 96, 0.3) !important;
+}
+
+/* Toast Navigation effects */
+nav a {
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    transform: translateY(-2px);
+    background-color: #fff8dc !important;
+}
 
